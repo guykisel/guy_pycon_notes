@@ -1,0 +1,15 @@
+for easy installation just use anaconda
+works in py2 and py3
+notebooks are like mini re-runnable text editors
+hipchat on main ipython website for help
+pull requests get priority over issues
+run notebook inside screen or tmux process to keep from accidentally killing it
+use 'running' tab to see all running notebooks to keep from having too many running
+manual save creates checkpoint, like a depth one version control
+notebook is a series of cells
+ipython tracks headings to create table of contents and add anchors
+for presentations, disable header
+can directly edit cell metadata/set slide type
+enter to edit mode
+shift-enter to execute
+esc to command mode

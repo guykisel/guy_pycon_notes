@@ -1,0 +1,3 @@
+urllib/requests are great for getting site source code, but not good for interpreting it
+beautifulsoup, lxml, xpath, selenium
+developer tools/firebug for looking at html/css

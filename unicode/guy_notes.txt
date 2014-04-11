@@ -49,3 +49,5 @@ python-ftfy library fixes mojibake - bad encodings
 -target encoding can't handle source data
 default behavior of encode() is strict
 
+
+from future import unicode literals?

@@ -1,2 +1,30 @@
 4/11 1:55
 
+get data
+engineer the data
+train and tune models
+apply model
+
+scikit-learn
+
+
+supervised learning
+-input data, then some output values (boolean, for example)
+-classification
+
+unsupervised learning
+-understanding your data
+
+this talk is mostly supervised learning
+
+1. set aside a validation set
+-25% of data set aside, untouched, used at the end for validation of model
+
+2. build pipelines, optimize parameters
+-sequence of operations
+
+readability library - pull unrelated stuff out of html text
+
+urlparse library - get hostname for url
+
+machine learning is now in libraries, can be used as engineering instead of science

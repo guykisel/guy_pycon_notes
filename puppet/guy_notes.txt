@@ -1,0 +1,13 @@
+4/11 2:30
+
+configuration management - dealing with complexity
+dont configure things manually
+
+puppet is a ruby DSL
+
+puppet board
+
+use vagrant
+
+packer creates vagrant boxes
+

@@ -1,0 +1,8 @@
+unicode 4/11 10:50 am
+python 3 out of scope
+same binary sequence can represent different characters depending on encoding
+
+
+
+
+

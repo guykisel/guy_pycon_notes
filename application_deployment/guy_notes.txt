@@ -1,0 +1,43 @@
+4/11 4:30
+
+omnibus - similar to homebrew
+-builds rpms, debs, etc
+
+ansible - agentless, dont have to install on clients
+- bad for lots of servers
+
+
+fabric - parallel, task based ssh
+
+
+saltstack doesnt use ssh, is faster for lots of servers
+
+mcollective
+-also useful for very many servers
+
+rundeck
+-runs as a service
+
+
+chatops
+-hubot
+-visibility
+-emerging trend
+-deploy via chat instead of having to ssh into servers
+
+secrets management
+-config in git is insecure
+-encryption is unwise
+-s3+IAM - amazon vendor lock in
+-barbican - openstack-ish
+-red october - offline/cold secrets
+
+
+logstash, kibana, sentry for logging
+
+
+heroku is really easy, expensive as you scale
+
+openshift - open source, no lockin, hard to deploy
+
+deis/flynn - very young

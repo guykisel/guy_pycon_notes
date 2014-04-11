@@ -1,0 +1,43 @@
+4/11 12:10
+
+should have a single codebase for both versions
+porting is an iterative process
+order components by dependencies
+add test coverage to reduce risk
+
+
+best strategy:
+straddle in single codebase
+use compatible subset of python syntax
+use conditional imports to mask stdlib changes
+six module can help
+
+
+python 2.6 is bare minimum for python 3 compatibilty without too much cruft/pain
+2.4/2.5 are long past EOL
+
+
+compatibility below python 3.3 is hard because its missing unicode literals
+3.2 is system python3 in many LTS distros
+
+
+porting can introduce bugs, causes fear
+-build confidence with improved testing, clarity in text vs bytes, modern idioms
+-use b''/u'' for ALL literals - never use bare string literals
+-modern exception handling syntax (except _ as _)
+-function-like print
+
+
+bottom up porting
+-start with packages that have no dependencies
+-work up through layers of dependencies
+
+
+python2.7 -3 can point out problems
+
+
+doctests make straddling really hard
+convert doctests to sphinx examples
+
+
+run tests using tox across supported versions

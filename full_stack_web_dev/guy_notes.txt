@@ -1,1 +1,25 @@
 4/11 11:30
+python is often one part of a much larger system
+can be confusing when you get out of the application layer - lots of pieces
+
+typical web app
+dev, staging, prod, deploy
+helpful python libraries
+
+stack:
+os
+web server
+db
+application language
+
+example:
+apache mod_wsgi / nginx gunicorn
+python
+postgres
+
+logging
+-loggly
+-splunk
+
+no such thing as a small change to a large system
+-should have a separate dev/staging env for each app

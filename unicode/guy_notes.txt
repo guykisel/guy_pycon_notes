@@ -1,8 +1,51 @@
 unicode 4/11 10:50 am
 python 3 out of scope
 same binary sequence can represent different characters depending on encoding
+unicode != utf 8
+unicode is text, utf 8 is storage
+str = bytestring - implies specific encoding
+unicode = code point - runs at text level
+need to translate bytes to unicode = decode
+unicode to bytes = encode
+cannot infer encoding from bytestring, has to be told externally
 
 
+example - convert windows-1252 to utf-8
+declare encoding of source code - useful for text editors and for humans
+non a-z, 0-9 characters often get garbled in encoding conversion
+string literals (text between quotes in source code) are utf-8 if source code is utf-8
+data read out of file (in this example) are windows-1252
+taking windows-1252 text, call .replace, and give it utf-8 string literals
+python creates mixed-encoding bytestring
+when string is put into utf-8 database, special characters arent recognized
 
 
+no such thing as a plain text string on a computer
+decode strings to unicode as theyre being read out of file
+replace all string literals with unicode literals
+when calling decode, tell decode what kind of encoding we are decoding - otherwise it defaults to ascii (usually)
+explicitly encode unicode to bytestrings when writing out to external apps/files
+- the unicode sandwich:
+decode as early as possible
+unicode everywhere in source code/app layer
+encode as late as possible
+
+
+test apps against both bytestrings and unicode
+
+
+best practices:
+know your encodings
+use the unicode sandwich
+test your text related code
+
+
+issues we cant control:
+-incorrect encoding
+something declared as cp-1252 but actually utf-8 == unicode decode error
+chardet library can guess encodings
+-mixed encodings, messed up encodings
+python-ftfy library fixes mojibake - bad encodings
+-target encoding can't handle source data
+default behavior of encode() is strict
 

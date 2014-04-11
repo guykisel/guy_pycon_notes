@@ -1,0 +1,13 @@
+4/11 3:15
+getting started with salt
+salt is config management, like puppet, chef, etc
+
+remote execution
+
+saltstack: python, yaml, jinja2
+
+young project, moves fast, not SSH
+
+master: server that manages whole stack
+
+salty vagrant - helps with salt + vagrant

@@ -1,0 +1,39 @@
+4/12 1:50
+
+julia evans http://jvns.ca
+
+ipython notebooks and pandas and numpy
+
+notebooks
+-web based UI to ipython
+-
+
+pandas
+-no loops
+
+numpy makes pandas fast
+-pandas is built on top of numpy
+
+dont use ubuntu packages - install via pip/anaconda instead
+
+pandas has a read csv function
+-specify encoding, seperator, index column, parse dates, skip rows, etc
+
+pandas can read excel
+
+columns in pandas are numpy arrays
+
+dataframes are sliceable
+
+dataframe has a plot method
+
+can do operations on dataframes without loops
+
+pandas knows times and time series, can recognize weekday for example
+
+groupby() and aggregate()
+
+resample()
+
+
+

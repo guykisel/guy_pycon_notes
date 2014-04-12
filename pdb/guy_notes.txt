@@ -1,0 +1,14 @@
+4/12 3:15
+https://github.com/nyergler/in-depth-pdb
+
+
+pdb is better than using print statements
+
+
+pdbrc allows for pdb configuration and extra commands
+
+
+pudb
+
+
+http://presentotron.com/nyergler/pdb/#1

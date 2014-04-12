@@ -1,0 +1,43 @@
+4/12 4:15
+
+be able to install
+be able to distribute
+know how to learn more
+
+
+name of distribution on pypi doesnt always match name used on import
+
+should not be sudo pip installing
+
+pip install --user installs to user home directory
+
+
+asheesh laroia - presenter
+
+pip install --editable .    - installs from local files
+
+
+distutils.core vs setuptools (dont use distribute)
+distutils - safe and featureless
+setuptools - comes with pip, more features
+
+dont use --user with virtualenv
+
+
+sudo apt-get build-dep python-lxml        - downloads dependencies for building
+
+
+kitsune vendor library - look up for django project distribution of openhatch
+
+to set up wheel, go to pip2014.com
+
+conda - alternative package manager
+
+pypi-install - makes a .deb file
+
+dh-virtualenv takes requirement.txt file and creates virtualenv installable as .deb file
+
+
+packaging.python.org
+
+asheesh.org/scratch/Preso

@@ -6,3 +6,61 @@ subprocess to ffi
 running external binary or c library when native python stuff isnt available
 
 assumes cpython 2.7 on linux
+
+why you shouldnt shell out
+-subprocess calls os.fork()
+-os.fork() is a system call to the os kernel
+-fork creates a child process by duplicating our python process
+-parent process waits for child using waitpid()
+-child runs execvp()
+-memory pages are shared between parent and child instead of being duplicated
+-data, heap, stack are given to child as copy-on-write
+-can use more total memory than the entire system has allocated
+-linux kernel over commits, like an airline overselling a flight
+-gets more complex with virtualization and containers
+
+why shell out using subprocess?
+-simple and easy
+-flexible
+-throws native python exceptions
+
+dangers of shelling out
+-overhead
+-limited api
+-have to parse stdout/stderr
+-flushing, buffering, deadlocks with pipes
+-shouldnt shell out for anything more complex than just calling a command and geting data back
+-shelling out is expensive computationally
+
+
+from inspect import getsourcefile
+import subprocess
+getsourcefile(subprocess)
+- this will give the path to the source code
+
+
+%edit in ipython - opens in text editor
+
+
+
+wrapping c libraries from python
+-allows for better performance, flexibility, etc
+-ffi: foreign function interface
+-call functions and data structures from one language in another
+
+options:
+-c extension - write C with pythons C API
+--have to write a lot of C
+-ctypes - part of stdlib, no C needed, but tedious and clunky
+-Cython - python/c hybrid, more for optimizing performance than for wrapping
+-CFFI - written to address ctypes shortcomings, works at ABI or API level (API level requires compiler)
+
+CFFI
+-wrapping is done in python, with some strings containing C for definitions, mappings, etc, imports
+-CFFI compiles and verifies in the background automatically
+-write less C!
+
+
+
+
+

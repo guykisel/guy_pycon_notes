@@ -1,0 +1,35 @@
+4/12 11:30
+
+portia burton
+github.com/pkafei ? (hard to read slide)
+
+70% clean and standardize data
+20% preprocessing, training, validation of data
+10% analyze and visualize data
+
+
+scikit-learn algorithm cheat sheet
+-super useful for figuring out what to do with scikit-learn depending on data and needs
+
+
+evernote uses scikit-learn
+-distinguish recipes from work notes
+-naive bayes classification
+
+
+keep your feature set low in supervised learning
+
+
+k-NN : k nearest neighbor
+simplest machine learning algorithm
+lazy algorithm - doesnt run computation until you give it a new data point
+
+demo: use k-nn for supervised learning
+look at k nearest neighbors
+each neighbor has equal weight OR each neighbor is weighted by distance
+minimum training, so high cost for new data
+correlation can be falsely high
+
+demo problem:
+identifying irises based on iris petals and sepals (section below petals)
+

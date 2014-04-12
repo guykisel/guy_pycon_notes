@@ -1,0 +1,20 @@
+4/12 10:50
+
+create computer models of behavior
+compare models to actual behavior
+physics games are good for comparing human reasoning
+
+hypothesis: physics engine in your head, performing simulations
+-simulations are not exact
+-simulations have some randomness
+-the world has uncertainty
+
+use video games as theories and as experiments
+-create model
+-create stimuli
+-run experiments
+-perform data analysis
+
+game-based experiments are more engaging, experimentees have more fun
+
+github.com/jhamrick/pycon-2014-talk

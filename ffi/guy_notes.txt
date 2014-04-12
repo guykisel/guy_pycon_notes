@@ -1,0 +1,8 @@
+4/12 12:10
+
+subprocess to ffi
+-christine spang
+
+running external binary or c library when native python stuff isnt available
+
+assumes cpython 2.7 on linux
